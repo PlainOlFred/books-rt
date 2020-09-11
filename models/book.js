@@ -6,10 +6,10 @@ const bookSchema = Schema({
         type: String
     },
     subtitle:{
-        type: [String]
+        type: String
     },
     authors: {
-        type: String
+        type: [String]
     },
     desc: {
         type: String
@@ -18,7 +18,7 @@ const bookSchema = Schema({
         type: String
     }, googleId: {
         type: String,
-        unigue: true
+        unique: true
     }
 });
 
